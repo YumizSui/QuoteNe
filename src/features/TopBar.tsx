@@ -96,7 +96,13 @@ const TopBar: React.FC<TopBarProps> = ({ menuButtonAction }) => {
             Active
           </Typography>
         </div>
-        <div style={{ display: 'flex', alignItems: 'center' }}>
+        <div
+          style={{
+            display: 'flex',
+            justifyContent: 'normal',
+            alignItems: 'center',
+          }}
+        >
           <Tooltip title="Show Account Setting">
             <IconButton
               color="inherit"

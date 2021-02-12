@@ -7,8 +7,8 @@ interface ThemeState {
 }
 
 const initialState: ThemeState = {
-  primary: '#704cb3',
-  secondary: '#00bcd4',
+  primary: '#1c1e24',
+  secondary: '#53565c',
 };
 
 export const themeSlice = createSlice({

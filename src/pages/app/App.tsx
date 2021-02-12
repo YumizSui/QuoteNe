@@ -5,29 +5,32 @@ import {
   createStyles,
   makeStyles,
   Theme,
+  Slide,
+  Typography,
 } from '@material-ui/core';
 import TopBar from '../../features/TopBar';
 import useTitle from '../../hooks/useTitle';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
-    text: {
+    content: {
       backgroundColor: '#282c34',
       minHeight: '100vh',
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',
       justifyContent: 'center',
-      fontSize: 'calc(10px + 2vmin)',
+    },
+    text: {
+      fontSize: 'calc(10px + 5vmin)',
       color: 'white',
       '&:hover': {
-        cursor: 'pointer',
-        'user-select': 'none',
+        userSelect: 'none',
       },
     },
   })
 );
-function App() {
+const App = (): JSX.Element => {
   const setTitle = useTitle();
   const classes = useStyles();
 
@@ -39,9 +42,13 @@ function App() {
     <div className="App">
       <CssBaseline />
       <TopBar />
-      <header className={classes.text}>素晴らしいコンテンツ</header>
+      <header className={classes.content}>
+        <Slide direction="up" in={true} timeout={1000}>
+          <Typography className={classes.text}>素晴らしいコンテンツ</Typography>
+        </Slide>
+      </header>
     </div>
   );
-}
+};
 
 export default App;
