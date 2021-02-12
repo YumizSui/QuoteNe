@@ -5,11 +5,11 @@ import {
   createStyles,
   makeStyles,
   Theme,
-  Slide,
-  Typography,
+  // Slide,
 } from '@material-ui/core';
 import TopBar from '../../features/TopBar';
 import useTitle from '../../hooks/useTitle';
+import QuoteItem from '../../features/QuoteItem';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -20,13 +20,6 @@ const useStyles = makeStyles((theme: Theme) =>
       flexDirection: 'column',
       alignItems: 'center',
       justifyContent: 'center',
-    },
-    text: {
-      fontSize: 'calc(10px + 5vmin)',
-      color: 'white',
-      '&:hover': {
-        userSelect: 'none',
-      },
     },
   })
 );
@@ -43,9 +36,18 @@ const App = (): JSX.Element => {
       <CssBaseline />
       <TopBar />
       <header className={classes.content}>
-        <Slide direction="up" in={true} timeout={1000}>
-          <Typography className={classes.text}>素晴らしいコンテンツ</Typography>
-        </Slide>
+        {/* <Slide direction="up" in={true} timeout={1000}> */}
+        <QuoteItem
+          quote={{
+            id: '111',
+            title: 'hoge',
+            url: 'huga',
+            contentType: 'html/text',
+            date: 'aaa',
+            tags: [],
+          }}
+        />
+        {/* </Slide> */}
       </header>
     </div>
   );

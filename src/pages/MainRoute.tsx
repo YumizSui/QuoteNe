@@ -8,13 +8,13 @@ const MainRoute = (): JSX.Element => {
     palette: {
       primary: {
         light: '#494b4f',
-        main: '#3f50b5',
+        main: '#1c1e24',
         dark: '#131519',
       },
       secondary: {
-        light: '#474f97',
-        main: '#1a237e',
-        dark: '#121858',
+        light: '#ef6694',
+        main: '#ec407a',
+        dark: '#a52c55',
       },
     },
   });
