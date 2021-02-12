@@ -39,12 +39,15 @@ const App = (): JSX.Element => {
         {/* <Slide direction="up" in={true} timeout={1000}> */}
         <QuoteItem
           quote={{
-            id: '111',
-            title: 'hoge',
-            url: 'huga',
+            id: '8e0433f6-6cf8-11eb-9439-0242ac130002',
+            title: '湯水🐧水さん (@YumizSui) / Twitter',
+            url: 'https://twitter.com/YumizSui',
             contentType: 'html/text',
-            date: 'aaa',
-            tags: [],
+            quoteBody:
+              '🐧🐧🐧せいぞんせんりゃくううううううううううううううううう！！！！！🍎',
+            comment: '廻るピングドラムはいいぞ．',
+            date: '2021-02-12T01:23:45.000Z',
+            tags: ['アニメ', 'twitter', '廻るピングドラム'],
           }}
         />
         {/* </Slide> */}

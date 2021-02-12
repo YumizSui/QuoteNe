@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme: Theme) =>
       marginRight: theme.spacing(2),
     },
     title: {
-      'user-select': 'none',
+      userSelect: 'none',
       '&:hover': {
         cursor: 'pointer',
       },

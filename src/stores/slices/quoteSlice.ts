@@ -11,6 +11,7 @@ export interface Quote {
   imgId?: string;
   date: string;
   tags: string[];
+  comment?: string;
 }
 interface QuoteState {
   quotes: Quote[] | undefined;
