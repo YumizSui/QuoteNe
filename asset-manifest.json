@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/QuoteNe/static/css/main.8fde506d.chunk.css",
-    "main.js": "/QuoteNe/static/js/main.b2b6abf0.chunk.js",
-    "main.js.map": "/QuoteNe/static/js/main.b2b6abf0.chunk.js.map",
+    "main.js": "/QuoteNe/static/js/main.ef5212a9.chunk.js",
+    "main.js.map": "/QuoteNe/static/js/main.ef5212a9.chunk.js.map",
     "runtime-main.js": "/QuoteNe/static/js/runtime-main.ce583107.js",
     "runtime-main.js.map": "/QuoteNe/static/js/runtime-main.ce583107.js.map",
     "static/js/2.ae7fe86f.chunk.js": "/QuoteNe/static/js/2.ae7fe86f.chunk.js",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.ce583107.js",
     "static/js/2.ae7fe86f.chunk.js",
     "static/css/main.8fde506d.chunk.css",
-    "static/js/main.b2b6abf0.chunk.js"
+    "static/js/main.ef5212a9.chunk.js"
   ]
 }
