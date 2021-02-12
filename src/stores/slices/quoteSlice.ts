@@ -1,4 +1,4 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { RootState } from '../store';
 
 export interface Quote {
@@ -27,7 +27,16 @@ export const selectQuotes = (state: RootState): Quote[] | undefined =>
 export const quoteSlice = createSlice({
   name: 'quote',
   initialState,
-  reducers: {},
+  reducers: {
+    addQuote: (state, action: PayloadAction<Quote>) => ({
+      ...state,
+      tasks: [...(state.quotes ?? []), action.payload],
+    }),
+  },
 });
+
+// const {
+//   addQuote,
+// } = quoteSlice.actions;
 
 export default quoteSlice.reducer;

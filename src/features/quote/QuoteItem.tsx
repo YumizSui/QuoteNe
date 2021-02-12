@@ -9,8 +9,9 @@ import {
   Chip,
   Link,
 } from '@material-ui/core';
-import { Quote } from '../stores/slices/quoteSlice';
-import thumbnail from '../sample.gif';
+import { Quote } from '../../stores/slices/quoteSlice';
+import thumbnail from '../../sample.gif';
+import LocalOfferIcon from '@material-ui/icons/LocalOffer';
 // import useQuotes from '../hooks/useQuotes';
 
 interface QuoteItemProps {
@@ -21,7 +22,8 @@ const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     quoteCard: {
       width: '300px',
-      height: 'auto',
+      height: '500px',
+      margin: '10px',
     },
     thumbnail: {
       margin: '10px 10px',
@@ -122,6 +124,7 @@ const QuoteItem: React.FC<QuoteItemProps> = ({ quote }) => {
               label={x}
               size="small"
               style={{ margin: '0.1rem' }}
+              icon={<LocalOfferIcon />}
             />
           ))}
         </div>
