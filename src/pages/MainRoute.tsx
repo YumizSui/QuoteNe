@@ -1,6 +1,6 @@
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Landing from "./landing/Landing";
-import App from "./app/App";
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Landing from './landing/Landing';
+import App from './app/App';
 
 const MainRoute = (): JSX.Element => (
   <Router basename={process.env.PUBLIC_URL}>

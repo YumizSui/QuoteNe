@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   AppBar,
   createStyles,
@@ -8,9 +8,9 @@ import {
   Toolbar,
   Tooltip,
   Typography,
-} from "@material-ui/core";
-import { AccountCircle } from "@material-ui/icons";
-import MenuIcon from "@material-ui/icons/Menu";
+} from '@material-ui/core';
+import { AccountCircle } from '@material-ui/icons';
+import MenuIcon from '@material-ui/icons/Menu';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -18,16 +18,16 @@ const useStyles = makeStyles((theme: Theme) =>
       marginRight: theme.spacing(2),
     },
     title: {
-      "&:hover": {
-        cursor: "pointer",
-        "user-select": "none",
+      'user-select': 'none',
+      '&:hover': {
+        cursor: 'pointer',
       },
     },
     links: {
       marginRight: theme.spacing(2),
-      "&:hover": {
-        borderBottomStyle: "solid",
-        borderBottomWidth: "1px",
+      '&:hover': {
+        borderBottomStyle: 'solid',
+        borderBottomWidth: '1px',
       },
     },
     appBar: {
@@ -46,13 +46,13 @@ const TopBar: React.FC<TopBarProps> = ({ menuButtonAction }) => {
 
   return (
     <AppBar position="fixed" className={classes.appBar}>
-      <Toolbar style={{ display: "flex", justifyContent: "space-between" }}>
+      <Toolbar style={{ display: 'flex', justifyContent: 'space-between' }}>
         <div
           style={{
-            display: "flex",
-            justifyContent: "normal",
-            flexDirection: "row",
-            alignItems: "center",
+            display: 'flex',
+            justifyContent: 'normal',
+            flexDirection: 'row',
+            alignItems: 'center',
             flexGrow: 1,
           }}
         >
@@ -75,8 +75,8 @@ const TopBar: React.FC<TopBarProps> = ({ menuButtonAction }) => {
         </div>
         <div
           style={{
-            display: "flex",
-            justifyContent: "space-between",
+            display: 'flex',
+            justifyContent: 'space-between',
             // flexDirection: "row",
             // alignItems: "center",
           }}
@@ -96,7 +96,7 @@ const TopBar: React.FC<TopBarProps> = ({ menuButtonAction }) => {
             Active
           </Typography>
         </div>
-        <div style={{ display: "flex", alignItems: "center" }}>
+        <div style={{ display: 'flex', alignItems: 'center' }}>
           <Tooltip title="Show Account Setting">
             <IconButton
               color="inherit"
